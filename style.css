@@ -46,13 +46,10 @@ body {
 
   color: #333;
   padding: 1em;
-  background-image: url(./images/backgound-image/pexels-moose-photos-170195-1037995.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
 
+  background-image: linear-gradient(135deg, #b5e6e0 50%, #ffbfbf 50%);
+  width: 100%;
+  height: 100%;
   font-size: 1rem;
 }
 
@@ -84,30 +81,21 @@ h2 {
 
 .nav-bar-container {
   max-height: 100vh;
-  /* overflow: auto; */
   display: flex;
   flex-direction: column;
-  padding: 1em 0 4em 1em;
+  padding: 1em 0 4em 0;
   font-weight: 600;
   font-size: 1.2rem;
   text-align: left;
-  gap: 3em;
+  gap: 2.5em;
   position: sticky;
   top: 0;
   text-align: center;
 }
 
 .nav-bar-container > * > * {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
   position: relative;
-  width: 65%;
-}
-
-.dashboard {
-  width: 86%;
-}
-.communities {
-  width: 83%;
 }
 
 .nav-bar-container li {
@@ -115,7 +103,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 25px;
-  padding-left: 15px;
+  padding: 7px 0 7px 25px;
 }
 
 .nav-bar-container > * > li:hover {
@@ -134,33 +122,24 @@ h2 {
   background-color: transparent;
   border-radius: 0;
   transition: none;
-}
-
-.nav-bar-container > * > * img {
-  position: relative;
-  top: 3px;
+  cursor: auto;
 }
 
 ul li.dashboard {
   font-weight: 700;
   position: relative;
-  margin-top: 0;
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-left: 5px;
-  margin-left: -3px;
+  margin-left: -10px;
 }
 
 li.dashboard h2 {
   font-size: 1.6rem;
 }
 
-.dashboard img {
-  width: 53px;
-  height: 53px;
-  position: relative;
-  top: 6px;
+.material-symbols-outlined.dashboard-svg {
+  font-size: 3rem;
 }
 
 .header {
@@ -194,11 +173,7 @@ li.dashboard h2 {
 .search label {
   position: relative;
   top: 6px;
-}
-
-.search label img {
-  width: 30px;
-  height: 30px;
+  left: 50px;
 }
 
 .search input {
@@ -208,7 +183,7 @@ li.dashboard h2 {
   outline: none;
   height: 30px;
   background-color: #c8d0da;
-  padding: 0 15px;
+  padding: 0 45px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -227,9 +202,8 @@ li.dashboard h2 {
   font-size: 1.1rem;
 }
 
-.notification img {
-  width: 30px;
-  height: 30px;
+.notification .material-symbols-outlined {
+  font-size: 1.8rem;
 }
 
 .profile-pic {
