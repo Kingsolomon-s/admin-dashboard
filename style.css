@@ -83,7 +83,8 @@ h2 {
 }
 
 .nav-bar-container {
-  height: 100vh;
+  max-height: 100vh;
+  /* overflow: auto; */
   display: flex;
   flex-direction: column;
   padding: 1em 0 4em 1em;
