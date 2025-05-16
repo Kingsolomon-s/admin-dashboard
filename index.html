@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dasboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -12,11 +16,8 @@
         <div class="nav-bar-container">
           <ul>
             <li class="dashboard">
-              <span>
-                <img
-                  src="./images/nav-bar-icons/dashboard_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="dashboard svg"
-                />
+              <span class="material-symbols-outlined dashboard-svg">
+                dashboard
               </span>
               <h2>Dashboard</h2>
             </li>
@@ -24,87 +25,42 @@
 
           <ul>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/home_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="home svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> home </span>
               <span>Home</span>
             </li>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/badge_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="profile svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> id_card </span>
               <span>Profile</span>
             </li>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/mode_comment_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="message svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> mode_comment </span>
               <span>Message</span>
             </li>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="history svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> history </span>
               <span>History</span>
             </li>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/task_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="task svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> task </span>
               <span>Task</span>
             </li>
             <li class="communities">
-              <span>
-                <img
-                  src="./images/nav-bar-icons/groups_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="communities svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> groups </span>
               <span>Communities</span>
             </li>
           </ul>
 
           <ul>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/settings_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="settings svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> settings </span>
               <span>Settings</span>
             </li>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/contact_support_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="support svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> contact_support </span>
               <span>Support</span>
             </li>
             <li>
-              <span>
-                <img
-                  src="./images/nav-bar-icons/verified_user_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="privacy svg"
-                />
-              </span>
+              <span class="material-symbols-outlined"> verified_user </span>
               <span>Privacy</span>
             </li>
           </ul>
@@ -116,23 +72,22 @@
           <div class="header-top">
             <div class="search">
               <label for="search"
-                ><img
-                  src="images/nav-bar-icons/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-              /></label>
+                ><span class="material-symbols-outlined"> search </span></label
+              >
               <input type="search" id="search" />
             </div>
 
             <div class="notification-container">
               <div class="notification">
-                <img
-                  src="./images/nav-bar-icons/notifications_active_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt="notification"
-                />
+                <span class="material-symbols-outlined">
+                  notifications_active
+                </span>
               </div>
               <div class="profile-pic">
                 <img
                   src="./images/profile-pics/white-cat.jpg"
                   alt="white-cat"
+                  loading="lazy"
                 />
               </div>
               <div>Morgan Oakley</div>
@@ -145,6 +100,7 @@
                 <img
                   src="./images/profile-pics/white-cat.jpg"
                   alt="white-cat"
+                  loading="lazy"
                 />
               </div>
               <div>
@@ -176,21 +132,9 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/star_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="star svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="visibility svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/family_history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="git branch svg"
-                /></span>
+                <span class="material-symbols-outlined"> star </span>
+                <span class="material-symbols-outlined"> visibility </span>
+                <span class="material-symbols-outlined"> family_history </span>
               </div>
             </div>
             <div class="box2">
@@ -202,21 +146,9 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/star_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="star svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="visibility svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/family_history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="git branch svg"
-                /></span>
+                <span class="material-symbols-outlined"> star </span>
+                <span class="material-symbols-outlined"> visibility </span>
+                <span class="material-symbols-outlined"> family_history </span>
               </div>
             </div>
             <div class="box3">
@@ -228,21 +160,9 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/star_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="star svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="visibility svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/family_history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="git branch svg"
-                /></span>
+                <span class="material-symbols-outlined"> star </span>
+                <span class="material-symbols-outlined"> visibility </span>
+                <span class="material-symbols-outlined"> family_history </span>
               </div>
             </div>
             <div class="box4">
@@ -255,21 +175,9 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/star_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="star svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="visibility svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/family_history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="git branch svg"
-                /></span>
+                <span class="material-symbols-outlined"> star </span>
+                <span class="material-symbols-outlined"> visibility </span>
+                <span class="material-symbols-outlined"> family_history </span>
               </div>
             </div>
             <div class="box5">
@@ -281,21 +189,9 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/star_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="star svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="visibility svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/family_history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="git branch svg"
-                /></span>
+                <span class="material-symbols-outlined"> star </span>
+                <span class="material-symbols-outlined"> visibility </span>
+                <span class="material-symbols-outlined"> family_history </span>
               </div>
             </div>
             <div class="box6">
@@ -308,21 +204,9 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/star_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="star svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="visibility svg"
-                /></span>
-                <span
-                  ><img
-                    src="./images/nav-bar-icons/family_history_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt="git branch svg"
-                /></span>
+                <span class="material-symbols-outlined"> star </span>
+                <span class="material-symbols-outlined"> visibility </span>
+                <span class="material-symbols-outlined"> family_history </span>
               </div>
             </div>
           </div>
@@ -365,7 +249,11 @@
             <div class="trending-container">
               <div>
                 <div class="pic-container">
-                  <img src="./images/profile-pics/bird.jpg" alt="bird" />
+                  <img
+                    src="./images/profile-pics/bird.jpg"
+                    alt="bird"
+                    loading="lazy"
+                  />
                 </div>
                 <div>
                   <p>@tegan</p>
@@ -378,6 +266,7 @@
                   <img
                     src="./images/profile-pics/white-cat.jpg"
                     alt="white-cat"
+                    loading="lazy"
                   />
                 </div>
                 <div>
@@ -391,6 +280,7 @@
                   <img
                     src="./images/profile-pics/shocked-cat.jpg"
                     alt="shocked-cat"
+                    loading="lazy"
                   />
                 </div>
                 <div>
@@ -401,7 +291,11 @@
 
               <div>
                 <div class="pic-container">
-                  <img src="./images/profile-pics/sheeps.jpg" alt="sheeps" />
+                  <img
+                    src="./images/profile-pics/sheeps.jpg"
+                    alt="sheeps"
+                    loading="lazy"
+                  />
                 </div>
                 <div>
                   <p>@slex</p>
