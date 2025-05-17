@@ -7,14 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  max-width: 100%;
-}
-
 input,
 button,
 textarea,
@@ -45,16 +37,14 @@ body {
   line-height: 1.5;
 
   color: #333;
-  padding: 1em;
+  padding-bottom: 1em;
 
   background-image: linear-gradient(135deg, #b5e6e0 50%, #ffbfbf 50%);
-  width: 100%;
   height: 100%;
   font-size: 1rem;
 }
 
 .container {
-  max-width: 100vw;
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -64,7 +54,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto 1fr;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
