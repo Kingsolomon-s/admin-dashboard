@@ -1,56 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Optimize font imports */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Force the material symbols font to load immediately */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block; /* Block rendering until font is loaded */
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v176/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsLjBuVY.woff2)
+    format("woff2");
+}
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
+/* Preload all icons to prevent CLS when they appear */
+.preload-icon {
+  position: absolute;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
 }
 
 body {
   line-height: 1.5;
-
   color: #333;
   padding: 1em;
-
   background-image: linear-gradient(135deg, #b5e6e0 50%, #ffbfbf 50%);
   width: 100%;
   height: 100%;
   font-size: 1rem;
+  will-change: transform; /* Hardware acceleration */
 }
 
 .container {
@@ -60,11 +81,11 @@ body {
   height: 100%;
   text-align: center;
   border-radius: 10px;
-
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(265.797px, 1fr) 4fr;
   grid-template-rows: auto 1fr;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  contain: content; /* Improve performance by isolating layout */
 }
 
 h2 {
@@ -77,6 +98,7 @@ h2 {
   position: relative;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  contain: strict; /* Isolate paint and layout */
 }
 
 .nav-bar-container {
@@ -145,6 +167,7 @@ li.dashboard h2 {
 .header {
   color: #333;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
+  contain: content; /* Isolate layout */
 }
 
 .header-div {
@@ -185,6 +208,8 @@ li.dashboard h2 {
   background-color: #c8d0da;
   padding: 0 45px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  min-height: 30px; /* Prevent CLS */
+  box-sizing: border-box;
 }
 
 .search input:focus {
@@ -200,6 +225,8 @@ li.dashboard h2 {
   align-items: center;
   font-weight: 700;
   font-size: 1.1rem;
+  min-width: 200px; /* Prevent CLS */
+  min-height: 45px; /* Prevent CLS */
 }
 
 .notification .material-symbols-outlined {
@@ -211,6 +238,7 @@ li.dashboard h2 {
   height: 45px;
   border-radius: 50%;
   overflow: hidden;
+  contain: strict; /* Isolate paint and layout */
 }
 
 .profile-pic.big {
@@ -222,6 +250,7 @@ li.dashboard h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  backface-visibility: hidden; /* Prevent image flickering */
 }
 
 .header-bottom {
@@ -253,23 +282,28 @@ li.dashboard h2 {
   width: 28%;
   border-radius: 34px;
   padding: 8px 0;
+  transform: translateZ(0); /* Hardware acceleration for animations */
 }
 
 .share-container > *:hover {
   background-color: #0a6d8e;
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.05) translateZ(0);
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .main-container {
   display: grid;
-  grid-template-columns: 3fr minmax(300px, 1fr);
+  grid-template-columns: minmax(712.82px, 3fr) minmax(300px, 1fr);
   column-gap: 20px;
   padding: 0 0.5em 0 1.4em;
+  height: 100%;
+  will-change: auto; /* Only change when needed */
+  min-height: 500px; /* Prevent CLS by reserving space */
 }
 
 .main-content > h2 {
+  width: 712.8px;
   text-align: left;
 }
 
@@ -278,6 +312,7 @@ li.dashboard h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
   row-gap: 30px;
+  contain: content; /* Improve performance */
 }
 
 .box-container > div {
@@ -290,10 +325,12 @@ li.dashboard h2 {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
+  transform: translateZ(0); /* Hardware acceleration */
+  contain: content; /* Improve performance */
 }
 
 .box-container > div:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) translateZ(0);
   box-shadow: 6px 8px 15px -2px rgba(0, 0, 0, 0.65);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -309,16 +346,19 @@ li.dashboard h2 {
 
 .git-svgs {
   text-align: right;
-}
-
-.git-svgs span:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+  min-height: 24px; /* Prevent CLS */
+  min-width: 100px; /* Prevent CLS */
 }
 
 .git-svgs span {
   margin-right: 1.3rem;
   transition: transform 0.2s ease;
+  transform: translateZ(0); /* Hardware acceleration */
+}
+
+.git-svgs span:hover {
+  transform: scale(1.2) translateZ(0);
+  cursor: pointer;
 }
 
 .main-container h2 {
@@ -331,6 +371,7 @@ li.dashboard h2 {
   padding: 1.3em 0.8em 1em 2.1em;
   border-radius: 8px;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
+  contain: content; /* Improve performance */
 }
 
 .side-bar h2,
@@ -367,6 +408,7 @@ li.dashboard h2 {
   padding: 1.5em 1.5em 1.5em 1.7em;
   border-radius: 8px;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
+  contain: content; /* Improve performance */
 }
 
 .trending-container > * {
@@ -377,6 +419,7 @@ li.dashboard h2 {
   line-height: 1.3;
   padding: 0 5px;
   transition: background-color 0.2s ease;
+  transform: translateZ(0); /* Hardware acceleration */
 }
 
 .trending-container > *:hover {
@@ -395,15 +438,49 @@ li.dashboard h2 {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
+  contain: strict; /* Isolate paint and layout */
 }
 
 .pic-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  backface-visibility: hidden; /* Prevent image flickering */
 }
 
 .lighter {
   font-weight: 400;
   color: #8b8686;
+}
+
+/* Force a specific height for navigation lists to avoid CLS */
+.nav-bar-container ul {
+  width: 100%;
+  min-height: 40px; /* Prevent layout shift by reserving space */
+}
+
+.nav-bar-container ul:first-child {
+  min-height: 60px; /* Dashboard section needs more height */
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Load critical CSS first */
+@media screen {
+  .container,
+  .nav-bar,
+  .header,
+  .main-container {
+    visibility: visible;
+  }
 }
