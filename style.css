@@ -288,12 +288,12 @@ li.dashboard h2 {
   text-align: right;
 }
 
-.git-svgs span:hover {
+.git-svgs svg:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.git-svgs span {
+.git-svgs svg {
   margin-right: 1.3rem;
   transition: transform 0.2s ease;
 }
