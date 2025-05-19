@@ -1,91 +1,58 @@
-/* Optimize font imports */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* Force the material symbols font to load immediately */
-@font-face {
-  font-family: "Material Symbols Outlined";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block; /* Block rendering until font is loaded */
-  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v176/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsLjBuVY.woff2)
-    format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Preload all icons to prevent CLS when they appear */
-.preload-icon {
-  position: absolute;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  width: 0;
-  overflow: hidden;
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
 }
 
 body {
   line-height: 1.5;
+
   color: #333;
-  padding: 1em;
+
   background-image: linear-gradient(135deg, #b5e6e0 50%, #ffbfbf 50%);
-  width: 100%;
   height: 100%;
   font-size: 1rem;
-  will-change: transform; /* Hardware acceleration */
 }
 
 .container {
-  max-width: 100vw;
   width: 100%;
   margin: 0 auto;
   height: 100%;
   text-align: center;
   border-radius: 10px;
+
   display: grid;
-  grid-template-columns: minmax(265.797px, 1fr) 4fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: auto 1fr;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
-  contain: content; /* Improve performance by isolating layout */
 }
 
 h2 {
@@ -98,7 +65,7 @@ h2 {
   position: relative;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  contain: strict; /* Isolate paint and layout */
+  padding-bottom: 0;
 }
 
 .nav-bar-container {
@@ -129,22 +96,18 @@ h2 {
 }
 
 .nav-bar-container > * > li:hover {
-  cursor: pointer;
+  transition: all 300ms ease;
 }
 
-.nav-bar-container > * > li:hover,
-.nav-bar-container > * > li:focus {
+.nav-bar-container > ul:nth-child(2) > li:hover,
+.nav-bar-container > ul:nth-child(2) > li:focus,
+.nav-bar-container > ul:nth-child(3) > li:hover,
+.nav-bar-container > ul:nth-child(3) > li:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
   transition: background-color 0.2s ease;
-}
-
-.nav-bar-container ul li.dashboard:hover,
-.nav-bar-container ul li.dashboard:focus {
-  background-color: transparent;
-  border-radius: 0;
-  transition: none;
-  cursor: auto;
+  cursor: pointer;
+  margin-left: 1rem;
 }
 
 ul li.dashboard {
@@ -160,14 +123,9 @@ li.dashboard h2 {
   font-size: 1.6rem;
 }
 
-.material-symbols-outlined.dashboard-svg {
-  font-size: 3rem;
-}
-
 .header {
   color: #333;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
-  contain: content; /* Isolate layout */
 }
 
 .header-div {
@@ -208,8 +166,6 @@ li.dashboard h2 {
   background-color: #c8d0da;
   padding: 0 45px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  min-height: 30px; /* Prevent CLS */
-  box-sizing: border-box;
 }
 
 .search input:focus {
@@ -225,12 +181,6 @@ li.dashboard h2 {
   align-items: center;
   font-weight: 700;
   font-size: 1.1rem;
-  min-width: 200px; /* Prevent CLS */
-  min-height: 45px; /* Prevent CLS */
-}
-
-.notification .material-symbols-outlined {
-  font-size: 1.8rem;
 }
 
 .profile-pic {
@@ -238,7 +188,6 @@ li.dashboard h2 {
   height: 45px;
   border-radius: 50%;
   overflow: hidden;
-  contain: strict; /* Isolate paint and layout */
 }
 
 .profile-pic.big {
@@ -250,7 +199,6 @@ li.dashboard h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  backface-visibility: hidden; /* Prevent image flickering */
 }
 
 .header-bottom {
@@ -282,28 +230,23 @@ li.dashboard h2 {
   width: 28%;
   border-radius: 34px;
   padding: 8px 0;
-  transform: translateZ(0); /* Hardware acceleration for animations */
 }
 
 .share-container > *:hover {
   background-color: #0a6d8e;
   cursor: pointer;
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.05);
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .main-container {
   display: grid;
-  grid-template-columns: minmax(712.82px, 3fr) minmax(300px, 1fr);
+  grid-template-columns: 3fr minmax(300px, 1fr);
   column-gap: 20px;
-  padding: 0 0.5em 0 1.4em;
-  height: 100%;
-  will-change: auto; /* Only change when needed */
-  min-height: 500px; /* Prevent CLS by reserving space */
+  padding: 0 0.5em 1em 1.4em;
 }
 
 .main-content > h2 {
-  width: 712.8px;
   text-align: left;
 }
 
@@ -312,7 +255,6 @@ li.dashboard h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
   row-gap: 30px;
-  contain: content; /* Improve performance */
 }
 
 .box-container > div {
@@ -325,12 +267,10 @@ li.dashboard h2 {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
-  transform: translateZ(0); /* Hardware acceleration */
-  contain: content; /* Improve performance */
 }
 
 .box-container > div:hover {
-  transform: translateY(-5px) translateZ(0);
+  transform: translateY(-5px);
   box-shadow: 6px 8px 15px -2px rgba(0, 0, 0, 0.65);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -346,19 +286,16 @@ li.dashboard h2 {
 
 .git-svgs {
   text-align: right;
-  min-height: 24px; /* Prevent CLS */
-  min-width: 100px; /* Prevent CLS */
+}
+
+.git-svgs span:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .git-svgs span {
   margin-right: 1.3rem;
   transition: transform 0.2s ease;
-  transform: translateZ(0); /* Hardware acceleration */
-}
-
-.git-svgs span:hover {
-  transform: scale(1.2) translateZ(0);
-  cursor: pointer;
 }
 
 .main-container h2 {
@@ -371,7 +308,6 @@ li.dashboard h2 {
   padding: 1.3em 0.8em 1em 2.1em;
   border-radius: 8px;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
-  contain: content; /* Improve performance */
 }
 
 .side-bar h2,
@@ -408,7 +344,6 @@ li.dashboard h2 {
   padding: 1.5em 1.5em 1.5em 1.7em;
   border-radius: 8px;
   box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.55);
-  contain: content; /* Improve performance */
 }
 
 .trending-container > * {
@@ -419,7 +354,6 @@ li.dashboard h2 {
   line-height: 1.3;
   padding: 0 5px;
   transition: background-color 0.2s ease;
-  transform: translateZ(0); /* Hardware acceleration */
 }
 
 .trending-container > *:hover {
@@ -438,14 +372,12 @@ li.dashboard h2 {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  contain: strict; /* Isolate paint and layout */
 }
 
 .pic-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  backface-visibility: hidden; /* Prevent image flickering */
 }
 
 .lighter {
@@ -453,34 +385,60 @@ li.dashboard h2 {
   color: #8b8686;
 }
 
-/* Force a specific height for navigation lists to avoid CLS */
-.nav-bar-container ul {
-  width: 100%;
-  min-height: 40px; /* Prevent layout shift by reserving space */
-}
+/* responsive */
 
-.nav-bar-container ul:first-child {
-  min-height: 60px; /* Dashboard section needs more height */
-}
-
-/* Optimize animations */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  ::before,
-  ::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+@media screen and (max-width: 1213px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .share-container {
+    width: 45%;
+  }
+  .share-container > * {
+    padding: 6px 4px;
+    border-radius: 8px;
+  }
+  .dashboard {
+    gap: 10px;
+  }
+  .header-div {
+    padding: 1em 1em;
+  }
+  .search {
+    width: 50%;
   }
 }
 
-/* Load critical CSS first */
-@media screen {
-  .container,
-  .nav-bar,
-  .header,
-  .main-container {
-    visibility: visible;
+@media screen and (max-width: 1040px) {
+  .header-div {
+    padding: 1em 3em;
+  }
+  .header-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .search {
+    order: 1;
+    width: 100%;
+    margin-left: -40px;
+  }
+  .notification-container {
+    max-width: 100%;
+  }
+  .notification-container > :nth-child(2) {
+    margin-left: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .notification-container > :nth-child(2) {
+    margin-left: 20%;
+  }
+  .header-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .share-container {
+    width: 100%;
   }
 }
