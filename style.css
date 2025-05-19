@@ -37,7 +37,6 @@ body {
   line-height: 1.5;
 
   color: #333;
-  padding-bottom: 1em;
 
   background-image: linear-gradient(135deg, #b5e6e0 50%, #ffbfbf 50%);
   height: 100%;
@@ -66,6 +65,7 @@ h2 {
   position: relative;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding-bottom: 0;
 }
 
 .nav-bar-container {
@@ -96,22 +96,18 @@ h2 {
 }
 
 .nav-bar-container > * > li:hover {
-  cursor: pointer;
+  transition: all 300ms ease;
 }
 
-.nav-bar-container > * > li:hover,
-.nav-bar-container > * > li:focus {
+.nav-bar-container > ul:nth-child(2) > li:hover,
+.nav-bar-container > ul:nth-child(2) > li:focus,
+.nav-bar-container > ul:nth-child(3) > li:hover,
+.nav-bar-container > ul:nth-child(3) > li:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.5rem;
   transition: background-color 0.2s ease;
-}
-
-.nav-bar-container ul li.dashboard:hover,
-.nav-bar-container ul li.dashboard:focus {
-  background-color: transparent;
-  border-radius: 0;
-  transition: none;
-  cursor: auto;
+  cursor: pointer;
+  margin-left: 1rem;
 }
 
 ul li.dashboard {
@@ -125,10 +121,6 @@ ul li.dashboard {
 
 li.dashboard h2 {
   font-size: 1.6rem;
-}
-
-.material-symbols-outlined.dashboard-svg {
-  font-size: 3rem;
 }
 
 .header {
@@ -191,10 +183,6 @@ li.dashboard h2 {
   font-size: 1.1rem;
 }
 
-.notification .material-symbols-outlined {
-  font-size: 1.8rem;
-}
-
 .profile-pic {
   width: 45px;
   height: 45px;
@@ -255,7 +243,7 @@ li.dashboard h2 {
   display: grid;
   grid-template-columns: 3fr minmax(300px, 1fr);
   column-gap: 20px;
-  padding: 0 0.5em 0 1.4em;
+  padding: 0 0.5em 1em 1.4em;
 }
 
 .main-content > h2 {
@@ -300,12 +288,12 @@ li.dashboard h2 {
   text-align: right;
 }
 
-.git-svgs span:hover {
+.git-svgs svg:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
-.git-svgs span {
+.git-svgs svg {
   margin-right: 1.3rem;
   transition: transform 0.2s ease;
 }
@@ -395,4 +383,62 @@ li.dashboard h2 {
 .lighter {
   font-weight: 400;
   color: #8b8686;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1213px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .share-container {
+    width: 45%;
+  }
+  .share-container > * {
+    padding: 6px 4px;
+    border-radius: 8px;
+  }
+  .dashboard {
+    gap: 10px;
+  }
+  .header-div {
+    padding: 1em 1em;
+  }
+  .search {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .header-div {
+    padding: 1em 3em;
+  }
+  .header-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .search {
+    order: 1;
+    width: 100%;
+    margin-left: -40px;
+  }
+  .notification-container {
+    max-width: 100%;
+  }
+  .notification-container > :nth-child(2) {
+    margin-left: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .notification-container > :nth-child(2) {
+    margin-left: 20%;
+  }
+  .header-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .share-container {
+    width: 100%;
+  }
 }
