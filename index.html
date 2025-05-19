@@ -3,145 +3,293 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
+    <title>Admin Dasboard</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Load only the Material Symbols font that's needed -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <!-- Load only the Poppins font weights needed -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <!-- Provide font display strategy -->
-    <style>
-      /* Font fallback to prevent CLS */
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-      }
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-        font-family: "Material Symbols Outlined", sans-serif;
-        width: auto !important; /* Force width to be stable */
-        height: auto !important; /* Force height to be stable */
-      }
-      /* Pre-size layout elements to avoid CLS */
-      ul,
-      div.git-svgs,
-      div.notification-container,
-      div.header-bottom {
-        contain: layout style;
-      }
-    </style>
   </head>
   <body>
-    <!-- Preload Material Symbols to avoid text/ul shifts -->
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >dashboard</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >home</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >id_card</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >mode_comment</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >history</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >task</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >groups</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >settings</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >contact_support</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >verified_user</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >search</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >notifications_active</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >star</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >visibility</span
-    >
-    <span class="material-symbols-outlined preload-icon" aria-hidden="true"
-      >family_history</span
-    >
-
     <div class="container">
       <div class="nav-bar">
         <div class="nav-bar-container">
-          <ul style="min-height: 60px; width: 100%">
+          <ul>
             <li class="dashboard">
-              <span class="material-symbols-outlined dashboard-svg">
-                dashboard
-              </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                viewBox="0 0 24 24"
+                stroke="#ffffff"
+                width="50"
+                height="50"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+                  ></path>
+                </g>
+              </svg>
               <h2>Dashboard</h2>
             </li>
           </ul>
 
-          <ul style="min-height: 240px; width: 100%">
+          <ul>
             <li>
-              <span class="material-symbols-outlined"> home </span>
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
               <span>Home</span>
             </li>
             <li>
-              <span class="material-symbols-outlined"> id_card </span>
+              <svg
+                fill="#ffffff"
+                viewBox="0 -2 16 16"
+                id="id-16px"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    id="Path_86"
+                    data-name="Path 86"
+                    d="M-9.5,2h-15a.5.5,0,0,0-.5.5v11a.5.5,0,0,0,.5.5h15a.5.5,0,0,0,.5-.5V2.5A.5.5,0,0,0-9.5,2ZM-10,13H-24V3h14Zm-7-7.5a.5.5,0,0,1,.5-.5h5a.5.5,0,0,1,.5.5.5.5,0,0,1-.5.5h-5A.5.5,0,0,1-17,5.5Zm6,3a.5.5,0,0,1-.5.5h-4a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h4A.5.5,0,0,1-11,8.5Zm0,3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h3A.5.5,0,0,1-11,11.5Zm-11.5.5h5a.5.5,0,0,0,.5-.5V11a2.989,2.989,0,0,0-1.562-2.616A1.991,1.991,0,0,0-18,7a2,2,0,0,0-2-2,2,2,0,0,0-2,2,1.991,1.991,0,0,0,.562,1.384A2.99,2.99,0,0,0-23,11v.5A.5.5,0,0,0-22.5,12ZM-21,7a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1-21,7Zm1,2a2,2,0,0,1,2,2h-4A2,2,0,0,1-20,9Z"
+                    transform="translate(25 -2)"
+                  ></path>
+                </g>
+              </svg>
               <span>Profile</span>
             </li>
             <li>
-              <span class="material-symbols-outlined"> mode_comment </span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#000000"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M3 7.2C3 6.07989 3 5.51984 3.21799 5.09202C3.40973 4.71569 3.71569 4.40973 4.09202 4.21799C4.51984 4 5.0799 4 6.2 4H17.8C18.9201 4 19.4802 4 19.908 4.21799C20.2843 4.40973 20.5903 4.71569 20.782 5.09202C21 5.51984 21 6.0799 21 7.2V20L17.6757 18.3378C17.4237 18.2118 17.2977 18.1488 17.1656 18.1044C17.0484 18.065 16.9277 18.0365 16.8052 18.0193C16.6672 18 16.5263 18 16.2446 18H6.2C5.07989 18 4.51984 18 4.09202 17.782C3.71569 17.5903 3.40973 17.2843 3.21799 16.908C3 16.4802 3 15.9201 3 14.8V7.2Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
               <span>Message</span>
             </li>
             <li>
-              <span class="material-symbols-outlined"> history </span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M3 5.67541V3C3 2.44772 2.55228 2 2 2C1.44772 2 1 2.44772 1 3V7C1 8.10457 1.89543 9 3 9H7C7.55229 9 8 8.55229 8 8C8 7.44772 7.55229 7 7 7H4.52186C4.54218 6.97505 4.56157 6.94914 4.57995 6.92229C5.621 5.40094 7.11009 4.22911 8.85191 3.57803C10.9074 2.80968 13.173 2.8196 15.2217 3.6059C17.2704 4.3922 18.9608 5.90061 19.9745 7.8469C20.9881 9.79319 21.2549 12.043 20.7247 14.1724C20.1945 16.3018 18.9039 18.1638 17.0959 19.4075C15.288 20.6513 13.0876 21.1909 10.9094 20.9247C8.73119 20.6586 6.72551 19.605 5.27028 17.9625C4.03713 16.5706 3.27139 14.8374 3.06527 13.0055C3.00352 12.4566 2.55674 12.0079 2.00446 12.0084C1.45217 12.0088 0.995668 12.4579 1.04626 13.0078C1.25994 15.3309 2.2082 17.5356 3.76666 19.2946C5.54703 21.3041 8.00084 22.5931 10.6657 22.9188C13.3306 23.2444 16.0226 22.5842 18.2345 21.0626C20.4464 19.541 22.0254 17.263 22.6741 14.6578C23.3228 12.0526 22.9963 9.30013 21.7562 6.91897C20.5161 4.53782 18.448 2.69239 15.9415 1.73041C13.4351 0.768419 10.6633 0.756291 8.14853 1.69631C6.06062 2.47676 4.26953 3.86881 3 5.67541Z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="M12 5C11.4477 5 11 5.44771 11 6V12.4667C11 12.4667 11 12.7274 11.1267 12.9235C11.2115 13.0898 11.3437 13.2344 11.5174 13.3346L16.1372 16.0019C16.6155 16.278 17.2271 16.1141 17.5032 15.6358C17.7793 15.1575 17.6155 14.546 17.1372 14.2698L13 11.8812V6C13 5.44772 12.5523 5 12 5Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
               <span>History</span>
             </li>
             <li>
-              <span class="material-symbols-outlined"> task </span>
+              <svg
+                fill="#ffffff"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#ffffff"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"
+                  ></path>
+                  <path
+                    d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"
+                  ></path>
+                </g>
+              </svg>
               <span>Task</span>
             </li>
             <li class="communities">
-              <span class="material-symbols-outlined"> groups </span>
+              <svg
+                fill="#ffffff"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 96.979 96.979"
+                xml:space="preserve"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <path
+                        d="M59.07,46.021L59.07,46.021c4.576-3.373,7.31-8.754,7.31-14.393c0-9.863-8.025-17.889-17.89-17.889 c-9.864,0-17.889,8.025-17.889,17.889c0,5.717,2.66,10.959,7.297,14.385c-18.244,6.451-21.092,28.71-21.531,35.378 c-0.031,0.479,0.137,0.949,0.465,1.3c0.328,0.35,0.785,0.549,1.264,0.549h60.788c0.479,0,0.938-0.199,1.266-0.549 c0.328-0.351,0.496-0.82,0.465-1.3C80.175,74.736,77.32,52.511,59.07,46.021z"
+                      ></path>
+                      <path
+                        d="M82.761,46.861c3.02-2.227,4.821-5.779,4.821-9.502c0-6.508-5.297-11.805-11.807-11.805c-1.867,0-3.627,0.447-5.199,1.223 c0.345,1.564,0.529,3.184,0.529,4.852c0,4.68-1.484,9.219-4.137,12.988c10.448,6.572,14.981,18.07,16.944,26.81h11.923 c0.315,0,0.618-0.131,0.836-0.361c0.215-0.23,0.325-0.541,0.305-0.857C96.688,65.812,94.805,51.144,82.761,46.861z"
+                      ></path>
+                      <path
+                        d="M29.976,44.617c-2.654-3.748-4.104-8.238-4.104-12.988c0-1.668,0.188-3.287,0.531-4.852 c-1.572-0.775-3.332-1.223-5.199-1.223c-6.51,0-11.807,5.297-11.807,11.805c0,3.775,1.754,7.236,4.816,9.496 C2.172,51.113,0.291,65.806,0.002,70.207c-0.021,0.316,0.09,0.627,0.307,0.857c0.217,0.229,0.52,0.36,0.836,0.36H13.06 C15.019,62.685,19.543,51.179,29.976,44.617z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
               <span>Communities</span>
             </li>
           </ul>
 
-          <ul style="min-height: 120px; width: 100%">
+          <ul>
             <li>
-              <span class="material-symbols-outlined"> settings </span>
+              <svg
+                viewBox="0 0 1024 1024"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+                stroke="#000000"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill="#ffffff"
+                    d="M600.704 64a32 32 0 0 1 30.464 22.208l35.2 109.376c14.784 7.232 28.928 15.36 42.432 24.512l112.384-24.192a32 32 0 0 1 34.432 15.36L944.32 364.8a32 32 0 0 1-4.032 37.504l-77.12 85.12a357.12 357.12 0 0 1 0 49.024l77.12 85.248a32 32 0 0 1 4.032 37.504l-88.704 153.6a32 32 0 0 1-34.432 15.296L708.8 803.904c-13.44 9.088-27.648 17.28-42.368 24.512l-35.264 109.376A32 32 0 0 1 600.704 960H423.296a32 32 0 0 1-30.464-22.208L357.696 828.48a351.616 351.616 0 0 1-42.56-24.64l-112.32 24.256a32 32 0 0 1-34.432-15.36L79.68 659.2a32 32 0 0 1 4.032-37.504l77.12-85.248a357.12 357.12 0 0 1 0-48.896l-77.12-85.248A32 32 0 0 1 79.68 364.8l88.704-153.6a32 32 0 0 1 34.432-15.296l112.32 24.256c13.568-9.152 27.776-17.408 42.56-24.64l35.2-109.312A32 32 0 0 1 423.232 64H600.64zm-23.424 64H446.72l-36.352 113.088-24.512 11.968a294.113 294.113 0 0 0-34.816 20.096l-22.656 15.36-116.224-25.088-65.28 113.152 79.68 88.192-1.92 27.136a293.12 293.12 0 0 0 0 40.192l1.92 27.136-79.808 88.192 65.344 113.152 116.224-25.024 22.656 15.296a294.113 294.113 0 0 0 34.816 20.096l24.512 11.968L446.72 896h130.688l36.48-113.152 24.448-11.904a288.282 288.282 0 0 0 34.752-20.096l22.592-15.296 116.288 25.024 65.28-113.152-79.744-88.192 1.92-27.136a293.12 293.12 0 0 0 0-40.256l-1.92-27.136 79.808-88.128-65.344-113.152-116.288 24.96-22.592-15.232a287.616 287.616 0 0 0-34.752-20.096l-24.448-11.904L577.344 128zM512 320a192 192 0 1 1 0 384 192 192 0 0 1 0-384zm0 64a128 128 0 1 0 0 256 128 128 0 0 0 0-256z"
+                  ></path>
+                </g>
+              </svg>
               <span>Settings</span>
             </li>
             <li>
-              <span class="material-symbols-outlined"> contact_support </span>
+              <svg
+                fill="#000000"
+                viewBox="0 0 16 16"
+                id="help-square-16px"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    id="Path_90"
+                    data-name="Path 90"
+                    d="M-10.5,16h-11A2.5,2.5,0,0,1-24,13.5V2.5A2.5,2.5,0,0,1-21.5,0h11A2.5,2.5,0,0,1-8,2.5v11A2.5,2.5,0,0,1-10.5,16Zm-11-15A1.5,1.5,0,0,0-23,2.5v11A1.5,1.5,0,0,0-21.5,15h11A1.5,1.5,0,0,0-9,13.5V2.5A1.5,1.5,0,0,0-10.5,1Zm6,8.5V8.958A3,3,0,0,0-13,6a3,3,0,0,0-3-3,3,3,0,0,0-3,3,.5.5,0,0,0,.5.5A.5.5,0,0,0-18,6a2,2,0,0,1,2-2,2,2,0,0,1,2,2,2,2,0,0,1-2,2,.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5A.5.5,0,0,0-15.5,9.5Zm0,3v-1A.5.5,0,0,0-16,11a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5A.5.5,0,0,0-15.5,12.5Z"
+                    transform="translate(24)"
+                  ></path>
+                </g>
+              </svg>
               <span>Support</span>
             </li>
             <li>
-              <span class="material-symbols-outlined"> verified_user </span>
+              <svg
+                fill="#000000"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 910.288 910.287"
+                xml:space="preserve"
+                stroke="#000000"
+                width="30"
+                height="30"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <path
+                        d="M873.206,202.06l-1.212-28.51l-28.386-2.915c-109.036-11.198-202.773-51.887-262.21-84.049 c-65.099-35.226-104.56-68.274-104.922-68.579L455.165,0L433.84,17.981c-0.392,0.33-39.853,33.379-104.951,68.604 c-59.437,32.162-153.173,72.851-262.209,84.049l-28.387,2.915l-1.212,28.51c-0.217,5.104-4.777,126.698,42.059,273.937 c27.637,86.887,67.549,164.736,118.627,231.396c64.139,83.701,145.948,149.68,243.155,196.102l14.221,6.793l14.221-6.793 c97.207-46.422,179.017-112.398,243.155-196.102c51.079-66.658,90.991-144.51,118.628-231.395 C877.982,328.759,873.423,207.165,873.206,202.06z M455.143,836.93c-81.095-41.209-149.731-97.887-204.194-168.646 c-46.393-60.275-82.812-130.998-108.248-210.201c-31.088-96.808-38.06-183.144-39.471-225.538 c43.735-6.494,87.949-17.421,131.833-32.597c42.9-14.836,85.598-33.752,126.907-56.221c41.915-22.798,73.81-44.573,93.172-58.812 c19.362,14.238,51.258,36.014,93.173,58.812c41.309,22.47,84.007,41.385,126.907,56.221 c43.896,15.181,88.123,26.108,131.87,32.602c-1.359,41.978-8.194,127.098-38.842,223.443 c-25.317,79.594-61.694,150.672-108.12,211.258C605.537,738.494,536.632,795.52,455.143,836.93z"
+                      ></path>
+                      <polygon
+                        points="635.013,305.016 588.969,351.06 417.368,522.662 330.399,435.693 318.573,423.867 295.239,447.201 295.239,447.202 271.904,470.537 417.368,616 681.682,351.686 "
+                      ></polygon>
+                    </g>
+                  </g>
+                </g>
+              </svg>
               <span>Privacy</span>
             </li>
           </ul>
@@ -152,45 +300,81 @@
         <div class="header-div">
           <div class="header-top">
             <div class="search">
-              <label for="search"
-                ><span class="material-symbols-outlined"> search </span></label
-              >
-              <input
-                type="search"
-                id="search"
-                placeholder="Search..."
-                style="height: 30px; width: 100%"
-              />
+              <label for="search">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </label>
+              <input type="search" id="search" />
             </div>
 
-            <div class="notification-container" style="min-width: 200px">
+            <div class="notification-container">
               <div class="notification">
-                <span class="material-symbols-outlined">
-                  notifications_active
-                </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Communication / Bell_Ring">
+                      <path
+                        id="Vector"
+                        d="M15 17V18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18V17M15 17H9M15 17H18.5905C18.973 17 19.1652 17 19.3201 16.9478C19.616 16.848 19.8475 16.6156 19.9473 16.3198C19.9997 16.1643 19.9997 15.9715 19.9997 15.5859C19.9997 15.4172 19.9995 15.3329 19.9863 15.2524C19.9614 15.1004 19.9024 14.9563 19.8126 14.8312C19.7651 14.7651 19.7047 14.7048 19.5858 14.5858L19.1963 14.1963C19.0706 14.0706 19 13.9001 19 13.7224V10C19 6.134 15.866 2.99999 12 3C8.13401 3.00001 5 6.13401 5 10V13.7224C5 13.9002 4.92924 14.0706 4.80357 14.1963L4.41406 14.5858C4.29477 14.7051 4.23504 14.765 4.1875 14.8312C4.09766 14.9564 4.03815 15.1004 4.0132 15.2524C4 15.3329 4 15.4172 4 15.586C4 15.9715 4 16.1642 4.05245 16.3197C4.15225 16.6156 4.3848 16.848 4.68066 16.9478C4.83556 17 5.02701 17 5.40956 17H9M18.0186 2.01367C19.3978 3.05299 20.4843 4.43177 21.1724 6.01574M5.98197 2.01367C4.60275 3.05299 3.5162 4.43177 2.82812 6.01574"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
               </div>
               <div class="profile-pic">
                 <img
                   src="./images/profile-pics/white-cat.jpg"
                   alt="white-cat"
                   loading="lazy"
-                  width="45"
-                  height="45"
                 />
               </div>
               <div>Morgan Oakley</div>
             </div>
           </div>
 
-          <div class="header-bottom" style="min-height: 80px">
+          <div class="header-bottom">
             <div class="greeting">
               <div class="profile-pic big">
                 <img
                   src="./images/profile-pics/white-cat.jpg"
                   alt="white-cat"
                   loading="lazy"
-                  width="70"
-                  height="70"
                 />
               </div>
               <div>
@@ -208,7 +392,7 @@
         </div>
       </header>
 
-      <main class="main-container" style="min-height: 500px">
+      <main class="main-container">
         <div class="main-content">
           <h2>Your Projects</h2>
 
@@ -221,10 +405,93 @@
                   Aperiam illo, soluta corrupti aliquam iusto commodi?
                 </p>
               </div>
-              <div class="git-svgs" style="min-height: 24px">
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> visibility </span>
-                <span class="material-symbols-outlined"> family_history </span>
+              <div class="git-svgs">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 511.999 511.999"
+                  xml:space="preserve"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M507.836,244.912c-1.147-1.312-28.596-32.502-72.998-63.93c-59.487-42.105-121.329-64.362-178.84-64.362 c-57.51,0-119.352,22.256-178.839,64.362C32.758,212.41,5.308,243.6,4.162,244.912c-5.549,6.35-5.549,15.824,0,22.174 c1.147,1.312,28.596,32.502,72.998,63.931c59.487,42.105,121.329,64.362,178.839,64.362c57.511,0,119.353-22.256,178.84-64.362 c44.402-31.428,71.852-62.618,72.998-63.931C513.386,260.737,513.386,251.262,507.836,244.912z M255.998,361.679 c-63.521,0-121.363-31.375-158.701-57.696c-25.869-18.236-45.799-36.671-57.155-47.984c11.357-11.315,31.289-29.749,57.155-47.984 c37.338-26.321,95.18-57.696,158.701-57.696c63.522,0,121.364,31.375,158.702,57.696c25.863,18.232,45.792,36.663,57.15,47.979 C442.551,285.146,356.081,361.679,255.998,361.679z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,214.787c-22.724,0-41.212,18.488-41.212,41.212s18.488,41.212,41.212,41.212s41.212-18.488,41.212-41.212 S278.723,214.787,255.998,214.787z M255.998,263.512c-4.143,0-7.513-3.37-7.513-7.513c0-4.143,3.37-7.513,7.513-7.513 c4.143,0,7.513,3.37,7.513,7.513C263.511,260.142,260.141,263.512,255.998,263.512z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,160.758c-52.516,0-95.241,42.726-95.241,95.242s42.724,95.242,95.241,95.242S351.24,308.517,351.24,256 S308.515,160.758,255.998,160.758z M255.998,317.542c-33.934,0-61.541-27.608-61.541-61.542s27.607-61.542,61.541-61.542 s61.542,27.608,61.542,61.542S289.933,317.542,255.998,317.542z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5C8 5.55228 7.55228 6 7 6C6.44772 6 6 5.55228 6 5ZM8 7.82929C9.16519 7.41746 10 6.30622 10 5C10 3.34315 8.65685 2 7 2C5.34315 2 4 3.34315 4 5C4 6.30622 4.83481 7.41746 6 7.82929V16.1707C4.83481 16.5825 4 17.6938 4 19C4 20.6569 5.34315 22 7 22C8.65685 22 10 20.6569 10 19C10 17.7334 9.21506 16.6501 8.10508 16.2101C8.45179 14.9365 9.61653 14 11 14H13C16.3137 14 19 11.3137 19 8V7.82929C20.1652 7.41746 21 6.30622 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.30622 15.8348 7.41746 17 7.82929V8C17 10.2091 15.2091 12 13 12H11C9.87439 12 8.83566 12.3719 8 12.9996V7.82929ZM18 6C18.5523 6 19 5.55228 19 5C19 4.44772 18.5523 4 18 4C17.4477 4 17 4.44772 17 5C17 5.55228 17.4477 6 18 6ZM6 19C6 18.4477 6.44772 18 7 18C7.55228 18 8 18.4477 8 19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="box2">
@@ -236,9 +503,92 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> visibility </span>
-                <span class="material-symbols-outlined"> family_history </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 511.999 511.999"
+                  xml:space="preserve"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M507.836,244.912c-1.147-1.312-28.596-32.502-72.998-63.93c-59.487-42.105-121.329-64.362-178.84-64.362 c-57.51,0-119.352,22.256-178.839,64.362C32.758,212.41,5.308,243.6,4.162,244.912c-5.549,6.35-5.549,15.824,0,22.174 c1.147,1.312,28.596,32.502,72.998,63.931c59.487,42.105,121.329,64.362,178.839,64.362c57.511,0,119.353-22.256,178.84-64.362 c44.402-31.428,71.852-62.618,72.998-63.931C513.386,260.737,513.386,251.262,507.836,244.912z M255.998,361.679 c-63.521,0-121.363-31.375-158.701-57.696c-25.869-18.236-45.799-36.671-57.155-47.984c11.357-11.315,31.289-29.749,57.155-47.984 c37.338-26.321,95.18-57.696,158.701-57.696c63.522,0,121.364,31.375,158.702,57.696c25.863,18.232,45.792,36.663,57.15,47.979 C442.551,285.146,356.081,361.679,255.998,361.679z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,214.787c-22.724,0-41.212,18.488-41.212,41.212s18.488,41.212,41.212,41.212s41.212-18.488,41.212-41.212 S278.723,214.787,255.998,214.787z M255.998,263.512c-4.143,0-7.513-3.37-7.513-7.513c0-4.143,3.37-7.513,7.513-7.513 c4.143,0,7.513,3.37,7.513,7.513C263.511,260.142,260.141,263.512,255.998,263.512z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,160.758c-52.516,0-95.241,42.726-95.241,95.242s42.724,95.242,95.241,95.242S351.24,308.517,351.24,256 S308.515,160.758,255.998,160.758z M255.998,317.542c-33.934,0-61.541-27.608-61.541-61.542s27.607-61.542,61.541-61.542 s61.542,27.608,61.542,61.542S289.933,317.542,255.998,317.542z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5C8 5.55228 7.55228 6 7 6C6.44772 6 6 5.55228 6 5ZM8 7.82929C9.16519 7.41746 10 6.30622 10 5C10 3.34315 8.65685 2 7 2C5.34315 2 4 3.34315 4 5C4 6.30622 4.83481 7.41746 6 7.82929V16.1707C4.83481 16.5825 4 17.6938 4 19C4 20.6569 5.34315 22 7 22C8.65685 22 10 20.6569 10 19C10 17.7334 9.21506 16.6501 8.10508 16.2101C8.45179 14.9365 9.61653 14 11 14H13C16.3137 14 19 11.3137 19 8V7.82929C20.1652 7.41746 21 6.30622 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.30622 15.8348 7.41746 17 7.82929V8C17 10.2091 15.2091 12 13 12H11C9.87439 12 8.83566 12.3719 8 12.9996V7.82929ZM18 6C18.5523 6 19 5.55228 19 5C19 4.44772 18.5523 4 18 4C17.4477 4 17 4.44772 17 5C17 5.55228 17.4477 6 18 6ZM6 19C6 18.4477 6.44772 18 7 18C7.55228 18 8 18.4477 8 19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="box3">
@@ -250,9 +600,92 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> visibility </span>
-                <span class="material-symbols-outlined"> family_history </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 511.999 511.999"
+                  xml:space="preserve"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M507.836,244.912c-1.147-1.312-28.596-32.502-72.998-63.93c-59.487-42.105-121.329-64.362-178.84-64.362 c-57.51,0-119.352,22.256-178.839,64.362C32.758,212.41,5.308,243.6,4.162,244.912c-5.549,6.35-5.549,15.824,0,22.174 c1.147,1.312,28.596,32.502,72.998,63.931c59.487,42.105,121.329,64.362,178.839,64.362c57.511,0,119.353-22.256,178.84-64.362 c44.402-31.428,71.852-62.618,72.998-63.931C513.386,260.737,513.386,251.262,507.836,244.912z M255.998,361.679 c-63.521,0-121.363-31.375-158.701-57.696c-25.869-18.236-45.799-36.671-57.155-47.984c11.357-11.315,31.289-29.749,57.155-47.984 c37.338-26.321,95.18-57.696,158.701-57.696c63.522,0,121.364,31.375,158.702,57.696c25.863,18.232,45.792,36.663,57.15,47.979 C442.551,285.146,356.081,361.679,255.998,361.679z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,214.787c-22.724,0-41.212,18.488-41.212,41.212s18.488,41.212,41.212,41.212s41.212-18.488,41.212-41.212 S278.723,214.787,255.998,214.787z M255.998,263.512c-4.143,0-7.513-3.37-7.513-7.513c0-4.143,3.37-7.513,7.513-7.513 c4.143,0,7.513,3.37,7.513,7.513C263.511,260.142,260.141,263.512,255.998,263.512z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,160.758c-52.516,0-95.241,42.726-95.241,95.242s42.724,95.242,95.241,95.242S351.24,308.517,351.24,256 S308.515,160.758,255.998,160.758z M255.998,317.542c-33.934,0-61.541-27.608-61.541-61.542s27.607-61.542,61.541-61.542 s61.542,27.608,61.542,61.542S289.933,317.542,255.998,317.542z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5C8 5.55228 7.55228 6 7 6C6.44772 6 6 5.55228 6 5ZM8 7.82929C9.16519 7.41746 10 6.30622 10 5C10 3.34315 8.65685 2 7 2C5.34315 2 4 3.34315 4 5C4 6.30622 4.83481 7.41746 6 7.82929V16.1707C4.83481 16.5825 4 17.6938 4 19C4 20.6569 5.34315 22 7 22C8.65685 22 10 20.6569 10 19C10 17.7334 9.21506 16.6501 8.10508 16.2101C8.45179 14.9365 9.61653 14 11 14H13C16.3137 14 19 11.3137 19 8V7.82929C20.1652 7.41746 21 6.30622 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.30622 15.8348 7.41746 17 7.82929V8C17 10.2091 15.2091 12 13 12H11C9.87439 12 8.83566 12.3719 8 12.9996V7.82929ZM18 6C18.5523 6 19 5.55228 19 5C19 4.44772 18.5523 4 18 4C17.4477 4 17 4.44772 17 5C17 5.55228 17.4477 6 18 6ZM6 19C6 18.4477 6.44772 18 7 18C7.55228 18 8 18.4477 8 19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="box4">
@@ -265,9 +698,92 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> visibility </span>
-                <span class="material-symbols-outlined"> family_history </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 511.999 511.999"
+                  xml:space="preserve"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M507.836,244.912c-1.147-1.312-28.596-32.502-72.998-63.93c-59.487-42.105-121.329-64.362-178.84-64.362 c-57.51,0-119.352,22.256-178.839,64.362C32.758,212.41,5.308,243.6,4.162,244.912c-5.549,6.35-5.549,15.824,0,22.174 c1.147,1.312,28.596,32.502,72.998,63.931c59.487,42.105,121.329,64.362,178.839,64.362c57.511,0,119.353-22.256,178.84-64.362 c44.402-31.428,71.852-62.618,72.998-63.931C513.386,260.737,513.386,251.262,507.836,244.912z M255.998,361.679 c-63.521,0-121.363-31.375-158.701-57.696c-25.869-18.236-45.799-36.671-57.155-47.984c11.357-11.315,31.289-29.749,57.155-47.984 c37.338-26.321,95.18-57.696,158.701-57.696c63.522,0,121.364,31.375,158.702,57.696c25.863,18.232,45.792,36.663,57.15,47.979 C442.551,285.146,356.081,361.679,255.998,361.679z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,214.787c-22.724,0-41.212,18.488-41.212,41.212s18.488,41.212,41.212,41.212s41.212-18.488,41.212-41.212 S278.723,214.787,255.998,214.787z M255.998,263.512c-4.143,0-7.513-3.37-7.513-7.513c0-4.143,3.37-7.513,7.513-7.513 c4.143,0,7.513,3.37,7.513,7.513C263.511,260.142,260.141,263.512,255.998,263.512z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,160.758c-52.516,0-95.241,42.726-95.241,95.242s42.724,95.242,95.241,95.242S351.24,308.517,351.24,256 S308.515,160.758,255.998,160.758z M255.998,317.542c-33.934,0-61.541-27.608-61.541-61.542s27.607-61.542,61.541-61.542 s61.542,27.608,61.542,61.542S289.933,317.542,255.998,317.542z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5C8 5.55228 7.55228 6 7 6C6.44772 6 6 5.55228 6 5ZM8 7.82929C9.16519 7.41746 10 6.30622 10 5C10 3.34315 8.65685 2 7 2C5.34315 2 4 3.34315 4 5C4 6.30622 4.83481 7.41746 6 7.82929V16.1707C4.83481 16.5825 4 17.6938 4 19C4 20.6569 5.34315 22 7 22C8.65685 22 10 20.6569 10 19C10 17.7334 9.21506 16.6501 8.10508 16.2101C8.45179 14.9365 9.61653 14 11 14H13C16.3137 14 19 11.3137 19 8V7.82929C20.1652 7.41746 21 6.30622 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.30622 15.8348 7.41746 17 7.82929V8C17 10.2091 15.2091 12 13 12H11C9.87439 12 8.83566 12.3719 8 12.9996V7.82929ZM18 6C18.5523 6 19 5.55228 19 5C19 4.44772 18.5523 4 18 4C17.4477 4 17 4.44772 17 5C17 5.55228 17.4477 6 18 6ZM6 19C6 18.4477 6.44772 18 7 18C7.55228 18 8 18.4477 8 19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="box5">
@@ -279,9 +795,92 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> visibility </span>
-                <span class="material-symbols-outlined"> family_history </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 511.999 511.999"
+                  xml:space="preserve"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M507.836,244.912c-1.147-1.312-28.596-32.502-72.998-63.93c-59.487-42.105-121.329-64.362-178.84-64.362 c-57.51,0-119.352,22.256-178.839,64.362C32.758,212.41,5.308,243.6,4.162,244.912c-5.549,6.35-5.549,15.824,0,22.174 c1.147,1.312,28.596,32.502,72.998,63.931c59.487,42.105,121.329,64.362,178.839,64.362c57.511,0,119.353-22.256,178.84-64.362 c44.402-31.428,71.852-62.618,72.998-63.931C513.386,260.737,513.386,251.262,507.836,244.912z M255.998,361.679 c-63.521,0-121.363-31.375-158.701-57.696c-25.869-18.236-45.799-36.671-57.155-47.984c11.357-11.315,31.289-29.749,57.155-47.984 c37.338-26.321,95.18-57.696,158.701-57.696c63.522,0,121.364,31.375,158.702,57.696c25.863,18.232,45.792,36.663,57.15,47.979 C442.551,285.146,356.081,361.679,255.998,361.679z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,214.787c-22.724,0-41.212,18.488-41.212,41.212s18.488,41.212,41.212,41.212s41.212-18.488,41.212-41.212 S278.723,214.787,255.998,214.787z M255.998,263.512c-4.143,0-7.513-3.37-7.513-7.513c0-4.143,3.37-7.513,7.513-7.513 c4.143,0,7.513,3.37,7.513,7.513C263.511,260.142,260.141,263.512,255.998,263.512z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,160.758c-52.516,0-95.241,42.726-95.241,95.242s42.724,95.242,95.241,95.242S351.24,308.517,351.24,256 S308.515,160.758,255.998,160.758z M255.998,317.542c-33.934,0-61.541-27.608-61.541-61.542s27.607-61.542,61.541-61.542 s61.542,27.608,61.542,61.542S289.933,317.542,255.998,317.542z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5C8 5.55228 7.55228 6 7 6C6.44772 6 6 5.55228 6 5ZM8 7.82929C9.16519 7.41746 10 6.30622 10 5C10 3.34315 8.65685 2 7 2C5.34315 2 4 3.34315 4 5C4 6.30622 4.83481 7.41746 6 7.82929V16.1707C4.83481 16.5825 4 17.6938 4 19C4 20.6569 5.34315 22 7 22C8.65685 22 10 20.6569 10 19C10 17.7334 9.21506 16.6501 8.10508 16.2101C8.45179 14.9365 9.61653 14 11 14H13C16.3137 14 19 11.3137 19 8V7.82929C20.1652 7.41746 21 6.30622 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.30622 15.8348 7.41746 17 7.82929V8C17 10.2091 15.2091 12 13 12H11C9.87439 12 8.83566 12.3719 8 12.9996V7.82929ZM18 6C18.5523 6 19 5.55228 19 5C19 4.44772 18.5523 4 18 4C17.4477 4 17 4.44772 17 5C17 5.55228 17.4477 6 18 6ZM6 19C6 18.4477 6.44772 18 7 18C7.55228 18 8 18.4477 8 19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
               </div>
             </div>
             <div class="box6">
@@ -294,9 +893,92 @@
                 </p>
               </div>
               <div class="git-svgs">
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> visibility </span>
-                <span class="material-symbols-outlined"> family_history </span>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  fill="#000000"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 511.999 511.999"
+                  xml:space="preserve"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          d="M507.836,244.912c-1.147-1.312-28.596-32.502-72.998-63.93c-59.487-42.105-121.329-64.362-178.84-64.362 c-57.51,0-119.352,22.256-178.839,64.362C32.758,212.41,5.308,243.6,4.162,244.912c-5.549,6.35-5.549,15.824,0,22.174 c1.147,1.312,28.596,32.502,72.998,63.931c59.487,42.105,121.329,64.362,178.839,64.362c57.511,0,119.353-22.256,178.84-64.362 c44.402-31.428,71.852-62.618,72.998-63.931C513.386,260.737,513.386,251.262,507.836,244.912z M255.998,361.679 c-63.521,0-121.363-31.375-158.701-57.696c-25.869-18.236-45.799-36.671-57.155-47.984c11.357-11.315,31.289-29.749,57.155-47.984 c37.338-26.321,95.18-57.696,158.701-57.696c63.522,0,121.364,31.375,158.702,57.696c25.863,18.232,45.792,36.663,57.15,47.979 C442.551,285.146,356.081,361.679,255.998,361.679z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,214.787c-22.724,0-41.212,18.488-41.212,41.212s18.488,41.212,41.212,41.212s41.212-18.488,41.212-41.212 S278.723,214.787,255.998,214.787z M255.998,263.512c-4.143,0-7.513-3.37-7.513-7.513c0-4.143,3.37-7.513,7.513-7.513 c4.143,0,7.513,3.37,7.513,7.513C263.511,260.142,260.141,263.512,255.998,263.512z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M255.998,160.758c-52.516,0-95.241,42.726-95.241,95.242s42.724,95.242,95.241,95.242S351.24,308.517,351.24,256 S308.515,160.758,255.998,160.758z M255.998,317.542c-33.934,0-61.541-27.608-61.541-61.542s27.607-61.542,61.541-61.542 s61.542,27.608,61.542,61.542S289.933,317.542,255.998,317.542z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6 5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5C8 5.55228 7.55228 6 7 6C6.44772 6 6 5.55228 6 5ZM8 7.82929C9.16519 7.41746 10 6.30622 10 5C10 3.34315 8.65685 2 7 2C5.34315 2 4 3.34315 4 5C4 6.30622 4.83481 7.41746 6 7.82929V16.1707C4.83481 16.5825 4 17.6938 4 19C4 20.6569 5.34315 22 7 22C8.65685 22 10 20.6569 10 19C10 17.7334 9.21506 16.6501 8.10508 16.2101C8.45179 14.9365 9.61653 14 11 14H13C16.3137 14 19 11.3137 19 8V7.82929C20.1652 7.41746 21 6.30622 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.30622 15.8348 7.41746 17 7.82929V8C17 10.2091 15.2091 12 13 12H11C9.87439 12 8.83566 12.3719 8 12.9996V7.82929ZM18 6C18.5523 6 19 5.55228 19 5C19 4.44772 18.5523 4 18 4C17.4477 4 17 4.44772 17 5C17 5.55228 17.4477 6 18 6ZM6 19C6 18.4477 6.44772 18 7 18C7.55228 18 8 18.4477 8 19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19Z"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
               </div>
             </div>
           </div>
@@ -343,8 +1025,6 @@
                     src="./images/profile-pics/bird.jpg"
                     alt="bird"
                     loading="lazy"
-                    width="50"
-                    height="50"
                   />
                 </div>
                 <div>
@@ -359,8 +1039,6 @@
                     src="./images/profile-pics/white-cat.jpg"
                     alt="white-cat"
                     loading="lazy"
-                    width="50"
-                    height="50"
                   />
                 </div>
                 <div>
@@ -375,8 +1053,6 @@
                     src="./images/profile-pics/shocked-cat.jpg"
                     alt="shocked-cat"
                     loading="lazy"
-                    width="50"
-                    height="50"
                   />
                 </div>
                 <div>
@@ -391,8 +1067,6 @@
                     src="./images/profile-pics/sheeps.jpg"
                     alt="sheeps"
                     loading="lazy"
-                    width="50"
-                    height="50"
                   />
                 </div>
                 <div>
