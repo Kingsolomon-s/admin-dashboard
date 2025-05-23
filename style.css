@@ -195,10 +195,8 @@ li.dashboard h2 {
   height: 70px;
 }
 
-.profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.profile-pic svg {
+  background: #63acac;
 }
 
 .header-bottom {
@@ -372,12 +370,7 @@ li.dashboard h2 {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-}
-
-.pic-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: #999;
 }
 
 .lighter {
@@ -386,7 +379,7 @@ li.dashboard h2 {
 }
 
 /* responsive */
-
+/* 
 @media screen and (max-width: 1213px) {
   .main-container {
     grid-template-columns: 1fr;
@@ -441,4 +434,4 @@ li.dashboard h2 {
   .share-container {
     width: 100%;
   }
-}
+} */
